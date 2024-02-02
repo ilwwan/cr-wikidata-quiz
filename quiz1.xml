@@ -1,0 +1,102 @@
+<quiz name="TestQuiz">
+  <questions>
+    <question><answerRight>Harper Lee</answerRight><answerWrong>Mark Twain</answerWrong><answerWrong>Ernest Hemingway</answerWrong><answerWrong>J.K. Rowling</answerWrong></question><question rank="2">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="3">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="4">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="5">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="6">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="7">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="8">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="9">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="10">
+      <name>Question Ten</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="11">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="12">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="13">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="14">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+    <question rank="15">
+      <name>Question</name>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerWrong>A wrong answer</answerWrong>
+      <answerRight>The right answer</answerRight>
+    </question>
+  </questions>
+</quiz>
