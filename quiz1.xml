@@ -1,102 +1,109 @@
-<quiz name="TestQuiz">
+<quiz name="RealQuiz">
   <questions>
-    <question><answerRight>Harper Lee</answerRight><answerWrong>Mark Twain</answerWrong><answerWrong>Ernest Hemingway</answerWrong><answerWrong>J.K. Rowling</answerWrong></question><question rank="2">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+    <question rank="1">
+      <name>What year did the World Wide Web (WWW) become publicly available?</name>
+      <answerWrong>1990</answerWrong>
+      <answerWrong>1993</answerWrong>
+      <answerWrong>1995</answerWrong>
+      <answerRight>1991</answerRight>
+    </question>
+    <question rank="2">
+      <name>Who is the author of the famous novel "To Kill a Mockingbird"?</name>
+      <answerWrong>Ernest Hemingway</answerWrong>
+      <answerWrong>F. Scott Fitzgerald</answerWrong>
+      <answerWrong>Mark Twain</answerWrong>
+      <answerRight>Harper Lee</answerRight>
     </question>
     <question rank="3">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Which planet is known as the Red Planet?</name>
+      <answerWrong>Venus</answerWrong>
+      <answerWrong>Mercury</answerWrong>
+      <answerWrong>Saturn</answerWrong>
+      <answerRight>Mars</answerRight>
     </question>
     <question rank="4">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Who painted the famous artwork "Starry Night"?</name>
+      <answerWrong>Pablo Picasso</answerWrong>
+      <answerWrong>Leonardo da Vinci</answerWrong>
+      <answerWrong>Michelangelo</answerWrong>
+      <answerRight>Vincent van Gogh</answerRight>
     </question>
     <question rank="5">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Which country is the largest by land area?</name>
+      <answerWrong>United States</answerWrong>
+      <answerWrong>Russia</answerWrong>
+      <answerWrong>China</answerWrong>
+      <answerRight>Russia</answerRight>
     </question>
     <question rank="6">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>What is the capital city of Australia?</name>
+      <answerWrong>Sydney</answerWrong>
+      <answerWrong>Melbourne</answerWrong>
+      <answerWrong>Brisbane</answerWrong>
+      <answerRight>Canberra</answerRight>
     </question>
     <question rank="7">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Who developed the theory of relativity?</name>
+      <answerWrong>Isaac Newton</answerWrong>
+      <answerWrong>Nikola Tesla</answerWrong>
+      <answerWrong>Galileo Galilei</answerWrong>
+      <answerRight>Albert Einstein</answerRight>
     </question>
     <question rank="8">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Which chemical element has the symbol 'H'?</name>
+      <answerWrong>Helium</answerWrong>
+      <answerWrong>Hydrogen</answerWrong>
+      <answerWrong>Hafnium</answerWrong>
+      <answerRight>Hydrogen</answerRight>
     </question>
     <question rank="9">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Who wrote the play "Romeo and Juliet"?</name>
+      <answerWrong>William Shakespeare</answerWrong>
+      <answerWrong>George Bernard Shaw</answerWrong>
+      <answerWrong>Anton Chekhov</answerWrong>
+      <answerRight>William Shakespeare</answerRight>
     </question>
     <question rank="10">
-      <name>Question Ten</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>What is the tallest mountain in the world?</name>
+      <answerWrong>Mount Kilimanjaro</answerWrong>
+      <answerWrong>Mount Everest</answerWrong>
+      <answerWrong>Mount Fuji</answerWrong>
+      <answerRight>Mount Everest</answerRight>
     </question>
     <question rank="11">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Who painted the Mona Lisa?</name>
+      <answerWrong>Leonardo da Vinci</answerWrong>
+      <answerWrong>Raphael</answerWrong>
+      <answerWrong>Michelangelo</answerWrong>
+      <answerRight>Leonardo da Vinci</answerRight>
     </question>
     <question rank="12">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>What is the chemical symbol for gold?</name>
+      <answerWrong>Ag</answerWrong>
+      <answerWrong>Au</answerWrong>
+      <answerWrong>Fe</answerWrong>
+      <answerRight>Au</answerRight>
     </question>
     <question rank="13">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Who was the first woman to win a Nobel Prize?</name>
+      <answerWrong>Marie Curie</answerWrong>
+      <answerWrong>Rosalind Franklin</answerWrong>
+      <answerWrong>Dorothy Hodgkin</answerWrong>
+      <answerRight>Marie Curie</answerRight>
     </question>
     <question rank="14">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Which famous scientist developed the theory of evolution by natural selection?</name>
+      <answerWrong>Isaac Newton</answerWrong>
+      <answerWrong>Nikola Tesla</answerWrong>
+      <answerWrong>Galileo Galilei</answerWrong>
+      <answerRight>Charles Darwin</answerRight>
     </question>
     <question rank="15">
-      <name>Question</name>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerWrong>A wrong answer</answerWrong>
-      <answerRight>The right answer</answerRight>
+      <name>Who is credited with the invention of the telephone?</name>
+      <answerWrong>Thomas Edison</answerWrong>
+      <answerWrong>Alexander Graham Bell</answerWrong>
+      <answerWrong>Nikola Tesla</answerWrong>
+      <answerRight>Alexander Graham Bell</answerRight>
     </question>
   </questions>
 </quiz>
