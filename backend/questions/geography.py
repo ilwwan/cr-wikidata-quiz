@@ -5,35 +5,36 @@ from datetime import datetime
 
 QUESTION_TEMPLATES = [
     {
-        "question": "En quelle année a eu lieu [] ?",
-        "answer_relation_identifier": "P585",
-        "element_type_identifier": "Q13418847",
-        "answer_parser": lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ").year,
-        "other_answers": lambda x: generate_dummy_years(
-            datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ").year
-        ),
-    },
-    {
-        "question": "Qui était l'époux ou l'épouse de [] ?",
-        "answer_relation_identifier": "P26",
-        "element_type_identifier": "Q116",
-        "element_relation_identifier": "wdt:P106",
-        "answer_is_entity": True,
+        "question": "Quelle est la capitale [] ?",
+        "answer_relation_identifier": "P36",
+        "element_type_identifier": "Q6256",
+        "max_offset": 120,
         "answer_parser": lambda x: x[0],
-        "other_answers": lambda x: [x[0]] + random.sample(x, 3),
-        "query_limit": 40,
-        "find_article": False,
+        "other_answers": lambda x: x,
+        "query_limit": 4,
+        "answer_is_entity": True,
+        "article_type": "de",
     },
     {
-        "question": "En quelle année est né [] ?",
-        "answer_relation_identifier": "P569",
-        "element_type_identifier": "Q116",
-        "element_relation_identifier": "wdt:P106",
-        "answer_parser": lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ").year,
-        "other_answers": lambda x: generate_dummy_years(
-            datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ").year
-        ),
+        "question": "Dans quel pays se trouve [] ?",
         "find_article": False,
+        "element_type_identifier": "Q1549591",
+        "answer_relation_identifier": "P17",
+        "max_offset": 120,
+        "answer_parser": lambda x: x[0],
+        "other_answers": lambda x: x,
+        "query_limit": 4,
+        "answer_is_entity": True,
+    },
+    {
+        "question": "Dans quel pays se trouve [] ?",
+        "element_type_identifier": "Q570116",
+        "answer_relation_identifier": "P17",
+        "max_offset": 120,
+        "answer_parser": lambda x: x[0],
+        "other_answers": lambda x: x,
+        "query_limit": 4,
+        "answer_is_entity": True,
     },
 ]
 
@@ -49,7 +50,7 @@ def generate_question_from_template(template, article_type=""):
     replacement, answer = get_random_element_from_identifier(
         template["element_type_identifier"],
         template["answer_relation_identifier"],
-        max_offset=template.get("max_offset", 200),
+        max_offset=template.get("max_offset", 250),
         limit=template.get("query_limit", 1),
         answer_is_entity=template.get("answer_is_entity", False),
         element_relation_identifier=template.get(
