@@ -1,0 +1,109 @@
+<quiz name="RealQuiz">
+  <questions>
+    <question rank="1">
+      <name>What year did the World Wide Web (WWW) become publicly available?</name>
+      <answerWrong>1990</answerWrong>
+      <answerWrong>1993</answerWrong>
+      <answerWrong>1995</answerWrong>
+      <answerRight>1991</answerRight>
+    </question>
+    <question rank="2">
+      <name>A</name>
+      <answerWrong>Ernest Hemingway</answerWrong>
+      <answerWrong>F. Scott Fitzgerald</answerWrong>
+      <answerWrong>Mark Twain</answerWrong>
+      <answerRight>Harper Lee</answerRight>
+    </question>
+    <question rank="3">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="4">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="5">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="6">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="7">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="8">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="9">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="10">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="11">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="12">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="13">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="14">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="15">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+  </questions>
+</quiz>

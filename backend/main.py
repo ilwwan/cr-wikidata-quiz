@@ -21,6 +21,7 @@ if __name__ == "__main__":
         #     continue
         print(q)
         print(a)
+        print(r)
         answer = input("Answer: ")
         if answer == str(r):
             print("Correct!")

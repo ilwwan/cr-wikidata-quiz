@@ -240,16 +240,6 @@ function Game() {
 
   check = function(i) {
     clickable = false;
-    $.ajax({
-      url: "/execute_script",
-      type: "POST",
-      success: function(response) {
-        // Handle success if needed
-      },
-      error: function(xhr, status, error) {
-        // Handle error if needed
-      }
-    });
 
     if(i == questionBoard.newestQuestion.rightAnswer) {
       questionBoard.right(i);
@@ -292,5 +282,15 @@ function Game() {
 }
 
 var game = new Game();
+$.ajax({
+      url: "/execute_script",
+      type: "POST",
+      success: function() {
+        // Handle success if needed
+      },
+      error: function() {
+        // Handle error if needed
+      }
+});
 game.startGame();
 

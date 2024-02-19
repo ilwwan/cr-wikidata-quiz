@@ -17,13 +17,14 @@ QUESTION_TEMPLATES = [
 ]
 
 
-def generate_random_question():
+def generate_random_question(inflecteur_instance):
     template = random.choice(QUESTION_TEMPLATES)
-    template, answers, real_answer = generate_question_from_template(template)
+    template, answers, real_answer = generate_question_from_template(
+        template, inflecteur_instance)
     return template, random.sample(answers, len(answers)), real_answer
 
 
-def generate_question_from_template(template, article_type=""):
+def generate_question_from_template(template, inflecteur_instance, article_type=""):
     question = template["question"]
     replacement, answer = get_random_element_from_identifier(
         template["element_type_identifier"],
@@ -38,7 +39,8 @@ def generate_question_from_template(template, article_type=""):
     if template.get("find_article", True):
         first_word = replacement.split(" ")[0]
         replacement = (
-            add_article(first_word, type_=template.get("article_type", ""))
+            add_article(first_word, inflecteur_instance,
+                        type_=template.get("article_type", ""))
             + " "
             + " ".join(replacement.split(" ")[1:])
         )

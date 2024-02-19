@@ -1,0 +1,109 @@
+<quiz name="RealQuiz">
+  <questions>
+    <question rank="1">
+      <name>What year did the World Wide Web (WWW) become publicly available?</name>
+      <answerWrong>1990</answerWrong>
+      <answerWrong>1993</answerWrong>
+      <answerWrong>1995</answerWrong>
+      <answerRight>1991</answerRight>
+    </question>
+    <question rank="2">
+      <name>A</name>
+      <answerWrong>Ernest Hemingway</answerWrong>
+      <answerWrong>F. Scott Fitzgerald</answerWrong>
+      <answerWrong>Mark Twain</answerWrong>
+      <answerRight>Harper Lee</answerRight>
+    </question>
+    <question rank="3">
+      <name>Quelle est la capitale (du/de la) Somalie  ?</name>
+      <answerWrong>Dublin</answerWrong>
+      <answerWrong>Montevideo</answerWrong>
+      <answerWrong>Accra</answerWrong>
+      <answerRight>Mogadiscio</answerRight>
+    </question>
+    <question rank="4">
+      <name>Qui a ecrit le Cours de physique de Feynman ?</name>
+      <answerWrong>Rene Goscinny</answerWrong>
+      <answerWrong>Steven Meisel</answerWrong>
+      <answerWrong>Madonna</answerWrong>
+      <answerRight>Richard Feynman</answerRight>
+    </question>
+    <question rank="5">
+      <name>Qui a ecrit l'Arkham Asylum ?</name>
+      <answerWrong>Michael Chabon</answerWrong>
+      <answerWrong>Alfred Aho</answerWrong>
+      <answerWrong>Malcolm Gladwell</answerWrong>
+      <answerRight>Grant Morrison</answerRight>
+    </question>
+    <question rank="6">
+      <name>Qui etait l'epoux ou l'epouse de Charles Ier ?</name>
+      <answerWrong>Phaedymia</answerWrong>
+      <answerWrong>Soraya Esfandiari Bakhtiari</answerWrong>
+      <answerWrong>Fahda bint Falah Al Hithlain</answerWrong>
+      <answerRight>Henriette Marie de France</answerRight>
+    </question>
+    <question rank="7">
+      <name>Qui a ecrit le La Bataille du riz ?</name>
+      <answerWrong>Jean-Michel Charlier</answerWrong>
+      <answerWrong>Al Feldstein</answerWrong>
+      <answerWrong>Pierre Christin</answerWrong>
+      <answerRight>Rene Goscinny</answerRight>
+    </question>
+    <question rank="8">
+      <name>Qui etait l'epoux ou l'epouse de Louis IX ?</name>
+      <answerWrong>Caroline d'Ansbach</answerWrong>
+      <answerWrong>Isabelle de Gloucester</answerWrong>
+      <answerWrong>Dilras Banu Begum</answerWrong>
+      <answerRight>Marguerite de Provence</answerRight>
+    </question>
+    <question rank="9">
+      <name>Qui a ecrit l'Icare  ?</name>
+      <answerWrong>Jacques Tardi</answerWrong>
+      <answerWrong>Cheng Yi</answerWrong>
+      <answerWrong>Andre Franquin</answerWrong>
+      <answerRight>Jean Giraud</answerRight>
+    </question>
+    <question rank="10">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="11">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="12">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="13">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="14">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+    <question rank="15">
+      <name>Question</name>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerWrong>F</answerWrong>
+      <answerRight>V</answerRight>
+    </question>
+  </questions>
+</quiz>

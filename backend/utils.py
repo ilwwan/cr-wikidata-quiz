@@ -1,8 +1,4 @@
-from inflecteur import inflecteur
 import random
-
-inflecteur = inflecteur()
-inflecteur.load_dict()
 
 articles = {
     "M": "le",
@@ -14,11 +10,11 @@ articles = {
 }
 
 
-def add_article(word, type_=""):
+def add_article(word, inflecteur_instance, type_=""):
     word_l = word.lower()
     if word_l[0] in "aeiouy":
         return articles[type_ + "v"] + word
-    gender = inflecteur.get_word_form(word_l)
+    gender = inflecteur_instance.get_word_form(word_l)
     if gender is None:
         return f"({articles[type_+'M']}/{articles[type_+'F']}) " + word
     for i, row in gender.iterrows():
