@@ -4,7 +4,7 @@ import questions.arts
 import time
 import random
 
-question_generators = [questions.arts]
+question_generators = [questions.arts, questions.histoire, questions.geography]
 
 
 def generate_random_question():
