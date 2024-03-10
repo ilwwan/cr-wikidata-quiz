@@ -1,27 +1,25 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, Response
+from pathlib import Path
+from backend.main import generate_random_question
+
+
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template("index.html")
 
 
-@app.route('/quiz1.xml')
-def quiz():
-    with open("quiz1.xml") as quiz:
-        return "\n".join(quiz.readlines())
+@app.route("/question")
+async def get_question():
+    question, answers, real_answer = await generate_random_question()
+    return {
+        "question": question,
+        "answers": answers,
+        "real_answer": real_answer,
+    }
 
 
-@app.route('/execute_script', methods=['POST'])
-def execute_script():
-    # Execute script.py here
-    # For example:
-    import subprocess
-    # subprocess.Popen(["python", "script.py"])
-
-    return "Script executed successfully"
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)

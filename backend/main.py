@@ -1,21 +1,13 @@
-import questions.histoire
-import questions.geography
-import questions.arts
+from .questions import generate_random_question
 import time
-import random
-
-question_generators = [questions.arts, questions.histoire, questions.geography]
-
-
-def generate_random_question():
-    generator = random.choice(question_generators)
-    return generator.generate_random_question()
+import argparse
+import asyncio as aio
 
 
-if __name__ == "__main__":
+async def run_in_console():
     while True:
         # try:
-        q, a, r = generate_random_question()
+        q, a, r = await generate_random_question()
         # except Exception as e:
         #     print("Erreur : ", e)
         #     continue
@@ -27,3 +19,13 @@ if __name__ == "__main__":
         else:
             print(f"Wrong! The correct answer was {r}")
         time.sleep(1)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--console", action="store_true")
+    parser.add_argument("--length", type=int, default=5)
+    args = parser.parse_args()
+    if args.console:
+        print("Console mode")
+        aio.run(run_in_console())

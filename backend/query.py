@@ -1,9 +1,14 @@
 from typing import Optional
-import requests
+import aiohttp
 import random
+import logging
 
 
-def get_random_element_from_identifier(
+async def on_request_start(session, context, params):
+    logging.getLogger("aiohttp.client").debug(f"Starting request <{params}>")
+
+
+async def get_random_element_from_identifier(
     element_type_identifier: str,
     anwser_relation_identifier: str,
     element_relation_identifier: Optional[str] = "wdt:P31/wdt:P279*",
@@ -32,32 +37,43 @@ def get_random_element_from_identifier(
     LIMIT {limit}
     """
     print(query)
-    r = requests.get(
-        "https://query.wikidata.org/sparql",
-        params={"format": "json", "query": query},
-        headers={"User-Agent": "Mozilla/5.0"},
-    )
-    r.raise_for_status()
-    response = r.json()
-    if len(r.json()["results"]["bindings"]) == 0:
-        return get_random_element_from_identifier(
-            element_type_identifier,
-            anwser_relation_identifier,
-            seed=seed,
-            max_offset=max_offset,
-            limit=limit,
-            answer_is_entity=answer_is_entity,
-        )
-    if limit == 1:
-        return (
-            r.json()["results"]["bindings"][0]["itemLabel"]["value"],
-            r.json()["results"]["bindings"][0][answer_query_field]["value"],
-        )
-    else:
-        return (
-            r.json()["results"]["bindings"][0]["itemLabel"]["value"],
-            [
-                row[answer_query_field]["value"]
-                for row in r.json()["results"]["bindings"]
-            ],
-        )
+    logging.basicConfig(level=logging.DEBUG)
+    trace_config = aiohttp.TraceConfig()
+    trace_config.on_request_start.append(on_request_start)
+    async with aiohttp.ClientSession(
+        trace_configs=[trace_config], read_timeout=60
+    ) as session:
+        async with session.get(
+            "https://query.wikidata.org/sparql",
+            params={"format": "json", "query": query},
+            headers={"User-Agent": "Mozilla/5.0"},
+        ) as response:
+            print(response)
+            if response.status < 200 or response.status >= 400:
+                print(response)
+                raise Exception(
+                    "Request failed with status code: " + str(response.status)
+                )
+            response = await response.json()
+            if len(response.get("results", {}).get("bindings", [])) == 0:
+                return await get_random_element_from_identifier(
+                    element_type_identifier,
+                    anwser_relation_identifier,
+                    seed=seed,
+                    max_offset=max_offset,
+                    limit=limit,
+                    answer_is_entity=answer_is_entity,
+                )
+            if limit == 1:
+                return (
+                    response["results"]["bindings"][0]["itemLabel"]["value"],
+                    response["results"]["bindings"][0][answer_query_field]["value"],
+                )
+            else:
+                return (
+                    response["results"]["bindings"][0]["itemLabel"]["value"],
+                    [
+                        row[answer_query_field]["value"]
+                        for row in response["results"]["bindings"]
+                    ],
+                )
